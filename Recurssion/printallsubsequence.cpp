@@ -14,6 +14,7 @@ void subseq(int arr[],int index,int n,vector<vector<int>>&ans,vector<int>temp)
     //yes
     temp.push_back(arr[index]);
     subseq(arr,index+1,n,ans,temp);
+    temp.pop_back();
     
 }
 
